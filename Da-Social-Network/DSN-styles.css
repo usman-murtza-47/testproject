@@ -1,0 +1,322 @@
+/*
+==============THE-STYLE-GUIDE============== 
+
+---------- TYPOGRAPHY ----------
+
+SCALE-MAJOR-THIRD
+1.250
+
+
+FONT SIZES
+12px / 16px / 20px / 24px / 32px / 40px / 48px / 62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.2 / 1.5
+
+LETTER SPACING
+0 / -2px
+
+FONT FAMILY
+Poppins
+
+---------- COLORS ----------
+
+PRIMARY
+Base: #339af0 (Sky Blue)
+Tint: #d0ebff (Arctic)
+Shade: #1c7ed6 (Deep Sea)
+
+SECONDARY
+Base: #9775fa (Lavendar)
+Tint: #e5dbff (Moonligh Iris)
+Shade: #7048e8 (Velvet Night)
+
+TERTIARY
+Base: #ff922b (Pumpkin)
+Tint: #ffe8cc (Dawn)
+Shade: #f76707 (Lava)
+
+GREY
+Base: #495057 (Slate)
+Tint: #f1f3f5 (Pebble)
+Shade: #212529 (Graphite)
+White: #ffffff (White)
+Black: #000000 (Black)
+
+---------- BORDER RADIUS ----------
+
+4px / 8px / 20px
+
+---------- SPACING SYSTEM ----------
+
+5px / 10px / 15px / 20px / 25px / 30px / 40px / 50px / 60px / 70px / 80px / 90px / 100px / 125px / 150px / 200px / 250px / 300px / 400px / 500px
+*/
+
+/* ----------------------- GLOBAL STYLES ----------------------- */
+
+:root {
+    /* FONT SIZE */
+    --text-sm: 1.2rem;
+    --text-base: 1.6rem;
+    --text-paragraph: 2rem;
+    --text-h5: 2.4rem;
+    --text-h4: 3.2rem;
+    --text-h3: 4rem;
+    --text-h2: 4.8rem;
+    --text-h1: 6.2rem;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* LINE HEIGHTS */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* LETTER SPACING */
+    --letter-spacing-tight: -2px;
+
+    /* FONT FAMILY */
+    --font-family: 'Poppins', sans-serif;
+
+    /* COLORS */
+    --primary-base: #339af0;
+    --primary-tint: #d0ebff;
+    --primary-shade: #1c7ed6;
+    --secondary-base: #9775fa;
+    --secondary-tint: #e5dbff;
+    --secondary-shade: #7048e8;
+    --tertiary-base: #ff922b;
+    --tertiary-tint: #ffe8cc;
+    --tertiary-shade: #f76707;
+    --grey-base: #495057;
+    --grey-tint: #f1f3f5;
+    --grey-shade: #212529;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* MISCELLANEOUS */
+    --nav-height: 100px;
+    /* Update the value in the flexbox topic */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px / 16px = 62.5% */
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--grey-base);
+}
+
+.container {
+    max-width: 430px;
+    width: 95%;
+    margin: 1px auto;
+    border: 1px solid black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--grey-shade);
+}
+
+h1 {
+    font-size: var(--text-h1);
+}
+
+h2 {
+    font-size: var(--text-h2);
+}
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+h4 {
+    font-size: var(--text-h4);
+}
+
+h5 {
+    font-size: var(--text-h5);
+}
+
+p {
+    font-size: var(--text-paragraph);
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--text-base);
+    display: inline-block;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--grey-base);
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    display: inline-block;
+}
+
+/* FROM HERE WE WILL START CODINGN THE MAIN CSS FOR THE PROGRAM */
+/* 1.NAV-SECTION */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.postbtn {
+    display: flex;
+    font-size: var(--text-base);
+    padding: 6px;
+    border: 5px solid var(--primary-shade);
+    background-color: var(--primary-shade);
+    color: var(--white);
+    border-radius: 12px;
+}
+
+#header2 {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 5px;
+}
+
+#header2 button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 4rem;
+    width: 100%;
+}
+
+/* 2.HERO-SECTION */
+.hero-section {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3px auto;
+}
+
+/* 2(A)-MESSAGES */
+.message {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 10px;
+    background-color: var(--primary-tint);
+    border: 4px solid var(--primary-tint);
+    border-radius: 12px;
+    margin: 2px auto;
+}
+
+.interaction {
+    display: flex;
+    gap: 15px;
+}
+
+.likebtn,
+.commentbtn,
+.sharebtn {
+    display: flex;
+    gap: 5px;
+    background-color: var(--primary-tint);
+    border: 1px solid var(--grey-shade);
+    font-size: var(--text-base);
+    border-radius: 8px;
+    padding: 5px;
+
+}
+
+.btnimg {
+    width: 18px;
+}
+
+/* 2(B)-CREATE A POST */
+.createapost{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 97%;
+    margin: 0 auto;
+    background-color: var(--grey-tint);
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid var(--grey-tint);
+
+}
+.createapost input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--grey-shade);
+    font-size: 16px;
+    padding: 2px;
+}
+.selectandchoose{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+#SelectTag{
+    font-size: 16px;
+    padding: 5px;
+    background: none;
+    border-radius: 12px;
+}
+.options{
+    background-color: var(--grey-tint);
+}
+
+#sharepostbtn{
+    background-color: var(--primary-shade);
+    border: 3px solid var(--primary-shade);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+/* 3.Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
