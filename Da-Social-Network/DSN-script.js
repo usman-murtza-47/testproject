@@ -5,10 +5,12 @@ const headerOne = document.getElementById("header1");
 const headerTwo = document.getElementById("header2");
 const postButton = document.getElementById("postbtn");
 const backButton = document.getElementById("backbtn");
+const UserButton=document.getElementById("userid");
 
 // 2.HERO-SECTION VARIABLES
 const pageOne = document.getElementById("section1");
 const pageTwo = document.getElementById("section2");
+const pageThree = document.getElementById("section3");
 const sharePostButton = document.getElementById("sharepostbtn");
 
 
@@ -17,6 +19,7 @@ headerOne.style.display = "flex";
 headerTwo.style.display = "none";
 pageOne.style.display = "flex";
 pageTwo.style.display = "none";
+pageThree.style.display="none";
 
 // Here is what happens if a user clicks on any button:
 
@@ -26,6 +29,7 @@ postButton.addEventListener('click', function () {
   headerTwo.style.display = "flex";
   pageOne.style.display = "none";
   pageTwo.style.display = "flex";
+  pageThree.style.display="none";
 });
 
 // 2.BACK BUTTON
@@ -34,6 +38,7 @@ backButton.addEventListener('click', function () {
   headerTwo.style.display = "none";
   pageOne.style.display = "flex";
   pageTwo.style.display = "none";
+  pageThree.style.display="none";
 })
 
 // 3.Share Post Button
@@ -62,7 +67,17 @@ sharePostButton.addEventListener('click', function () {
     headerTwo.style.display = "none";
     pageOne.style.display = "flex";
     pageTwo.style.display = "none";
+    pageThree.style.display="none";
 
     document.getElementById("postmsg").value = "";
   }
+})
+
+// 4.User Button
+UserButton.addEventListener('click',function(){
+    headerOne.style.display = "none";
+    headerTwo.style.display = "flex";
+    pageOne.style.display = "none";
+    pageTwo.style.display = "none";
+    pageThree.style.display="flex";
 })
