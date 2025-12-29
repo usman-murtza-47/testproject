@@ -19,11 +19,11 @@ const nameChangeButton=document.getElementById("namebtn");
 
 
 // HERE ARE THE DEFAULT CONDITIONS OF THE PAGE WHEN THE PAGE IS FIRST OPENED BY THE USER
-headerOne.style.display = "none";
-headerTwo.style.display = "flex";
-pageOne.style.display = "none";
+headerOne.style.display = "flex";
+headerTwo.style.display = "none";
+pageOne.style.display = "flex";
 pageTwo.style.display = "none";
-pageThree.style.display="flex";
+pageThree.style.display="none";
 pageFour.style.display="none";
 pageFive.style.display="none";
 pageSix.style.display="none";
