@@ -211,6 +211,7 @@ span {
     padding: 5px;
     align-items: center;
     gap: 5px;
+    border-bottom: 1px solid var(--grey-tint);
 }
 
 #header2 button {
@@ -243,22 +244,25 @@ span {
     width: 97%;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 1px;
     padding: 10px;
     background-color: var(--primary-tint);
     border: 4px solid var(--primary-tint);
     border-radius: 12px;
-    margin: 2px auto;
+    margin: 1px auto;
 }
 .username{
-    font-size: var(--text-paragraph);
+    font-weight: var(--font-weight-bold);
+    color: var(--grey-shade);
+    font-size: var(--text-base);
 }
 .msginfo{
     font-size: var(--text-base);
 }
 .interaction {
     display: flex;
-    gap: 15px;
+    gap: 5px;
+    margin-top: 2px;
 }
 
 .likebtn,
@@ -289,6 +293,7 @@ span {
     padding: 10px;
     border-radius: 12px;
     border: 2px solid var(--grey-tint);
+    margin-top: 5px;
 
 }
 .createapost input{
@@ -322,9 +327,31 @@ span {
     color: var(--white);
 }
 
+/* 2(C) My Profile Page */
+.Tags{
+    margin-top: 5px;
+    background: var(--grey-tint);
+    padding: 8px;
+    border-radius: 12px;
+}
+.btns2{
+    background: none;
+    border: none;
+    padding: 6px;
+    border-bottom: 1px solid var(--grey-base);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 3px;
+}
+.btns2 img{
+    width: 3rem;
+}
+
 /* 3.Footer */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
 }
